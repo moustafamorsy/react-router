@@ -7,7 +7,7 @@
    MovieRating: "4",
    MovieTitle: "Doctor Strange in the Multiverse of Madness",
    MovieDescription: "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself",
-   TrailerUrl: "https://www.imdb.com/video/vi1050657305/?ref_=watch_fanfav_tr_vp_1",
+   TrailerUrl: "https://www.youtube.com/watch?v=aWzlQ2N6qqg",
     },
     {
       id:"2",
@@ -15,7 +15,7 @@
         MovieRating: "5",
         MovieTitle: "DC League of Super-Pets",
         MovieDescription: "Krypto the Super-Dog and Superman are inseparable best friends, sharing the same superpowers and fighting crime side by side in Metropolis. ",
-        TrailerUrl: "https://www.imdb.com/video/vi3047014937/?ref_=watch_fanfav_tr_vp_5",
+        TrailerUrl: "https://www.youtube.com/watch?v=1jkw2JPCl18",
          },
          {
             id:"3",
@@ -23,7 +23,7 @@
             MovieRating: "4",
             MovieTitle: "Top Gun: Maverick",
             MovieDescription: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot",
-            TrailerUrl: "https://www.imdb.com/video/vi2578694681/?ref_=watch_fanfav_tr_vp_4",
+            TrailerUrl: "https://www.youtube.com/watch?v=giXco2jaZ_4",
              },
              {
                id:"4",
@@ -31,7 +31,7 @@
                 MovieRating: "3",
                 MovieTitle: "Black Phone",
                 MovieDescription: "After being abducted by a child killer and locked in a soundproof basement, a 13-year-old boy starts receiving calls on a disconnected phone from the killer's previous victims.",
-                TrailerUrl: "https://www.imdb.com/video/vi601801241/?ref_=watch_fanfav_tr_vp_2",
+                TrailerUrl: "https://www.youtube.com/watch?v=3eGP6im8AZA",
                  }
 
 ]

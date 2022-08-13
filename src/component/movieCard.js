@@ -1,6 +1,7 @@
 
 
 
+
 function movieCard(props) {
 
     const styles ={
@@ -60,7 +61,8 @@ function movieCard(props) {
 
     return(
 
-        <article key={props.id} style={movieCard} className="movie-card">
+       
+         <article key={props.id} style={movieCard} className="movie-card">
           
           <img style={img} src={props.MoviePoster} alt="Movie poster" />
 
@@ -77,12 +79,9 @@ function movieCard(props) {
            
 
           </section>
+        
 
-
-
-
-
-        </article>
+        </article> 
 
     )
     

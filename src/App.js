@@ -5,6 +5,8 @@ import data from "./component/MovieList";
 import Moviecard from "./component/movieCard";
 import Filter from "./component/filterMovie";
 import "./App.css";
+import {Routes , Route , Link} from 'react-router-dom'
+import CheckMovie from './component/despndtrailer'
 
 function App() {
   const [search, setSearch] = useState("");
@@ -43,11 +45,11 @@ function App() {
       return false;
     })
     .map((Movies) => {
-      return <Moviecard key={Movies.id} {...Movies} />;
+      return <Link to={`/despndtrailer/${Movies.id}`}> <Moviecard key={Movies.id} {...Movies} /></Link>;
     });
 
   function pushMovie() {
-    setMYData([...mydata, { ...newMovie, id: mydata.length + 1 }]);
+    setMYData([...mydata, { ...newMovie, id: `${mydata.length + 1}` }]);
   }
   console.log(mydata);
 
@@ -72,6 +74,8 @@ function App() {
   }
   console.log(newMovie);
   return (
+    <Routes>
+      <Route path='Movie-list' element={
     <div className="App">
       <Nav />
       <Form add={addmovie} movie={newMovie} push={pushMovie} addmovie={plus} />
@@ -83,7 +87,9 @@ function App() {
         addopen={addopen}
       />
       <div className="Container">{Movie}</div>
-    </div>
+    </div>}></Route>
+    <Route path='despndtrailer/:id' element={<CheckMovie />}></Route>
+    </Routes>
   );
 }
 
