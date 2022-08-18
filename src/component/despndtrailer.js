@@ -1,5 +1,4 @@
 import { useNavigate, useParams } from "react-router-dom";
-
 import ReactPlayer from 'react-player'
 import data from "../component/MovieList";
 

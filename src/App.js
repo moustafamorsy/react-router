@@ -5,7 +5,7 @@ import data from "./component/MovieList";
 import Moviecard from "./component/movieCard";
 import Filter from "./component/filterMovie";
 import "./App.css";
-import {Routes , Route , Link} from 'react-router-dom'
+import {Routes , Route} from 'react-router-dom'
 import CheckMovie from './component/despndtrailer'
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
       return false;
     })
     .map((Movies) => {
-      return <Link to={`/despndtrailer/${Movies.id}`}> <Moviecard key={Movies.id} {...Movies} /></Link>;
+      return  <Moviecard key={Movies.id} {...Movies}  />;
     });
 
   function pushMovie() {

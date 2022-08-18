@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 
 
 
@@ -57,12 +57,12 @@ function movieCard(props) {
 
 
     }
-  const {movieCard , movieData ,img , title , description , button} = styles
+  const {movieCard , movieData ,img , title , description} = styles
 
     return(
 
        
-         <article key={props.id} style={movieCard} className="movie-card">
+      <Link  key={props.id} to={`/despndtrailer/${props.id}` }>  <article key={props.id} style={movieCard} className="movie-card">
           
           <img style={img} src={props.MoviePoster} alt="Movie poster" />
 
@@ -74,14 +74,14 @@ function movieCard(props) {
              </div>
              <p style={description}>{props.MovieDescription}</p>
 
-             <button style={button} ></button>
+           
 
            
 
           </section>
         
 
-        </article> 
+        </article> </Link>
 
     )
     
