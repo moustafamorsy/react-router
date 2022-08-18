@@ -7,9 +7,9 @@ function CheckMovie(){
   const navigate = useNavigate();
     const {id} = useParams();
 
-   const pnt = data.find(d => d.id === id);
+   const pnt = data.map(data => data).find(d => d.id === id);
 
-
+  
 
     return(
         
@@ -17,7 +17,7 @@ function CheckMovie(){
     {id}
   <ReactPlayer 
 
- url={pnt.TrailerUrl} type="youtube" />
+ url={pnt.TrailerUrl}  type="video/webm"  />
 
 
  

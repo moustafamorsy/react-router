@@ -74,7 +74,7 @@ function movieCard(props) {
              </div>
              <p style={description}>{props.MovieDescription}</p>
 
-             <button style={button} ><a style={{textDecoration: "none", color:"white"}} href={props.TrailerUrl}>Trailer</a> </button>
+             <button style={button} ></button>
 
            
 
